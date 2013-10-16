@@ -1,0 +1,9 @@
+<h2>Cursos IOB <%= @total %></h2>
+<ul>
+<% x = 0 %>
+<% while x < @curso['titulo'].count %>
+	<li><a href="<%= @curso['link'][x] %>"><%= @curso['titulo'][x] %></a><i style="cursor:pointer" class="icon-camera show-image" data-img="<%= @curso['img'][x] %>"></i></li>
+	<% x = x+1 %>
+<% end %>
+</ul>
+<% x = 0 %>
